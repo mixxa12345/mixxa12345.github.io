@@ -1,6 +1,6 @@
 [
 	{
-		"question": "1 + 1 * 1",
+		"question": "1 - 1 + 1 * 1 + 1",
 		"choice1": "1",
 		"choice2": "2",
 		"choice3": "3",
@@ -8,156 +8,156 @@
 		"answer": "c2"
 	},
 	{
-		"question": "2 * 10",
+		"question": "2 * 2 / 2 + 2",
 		"choice1": "1",
 		"choice2": "2",
 		"choice3": "3",
 		"choice4": "4",
+		"answer": "c4"
+	},
+	{
+		"question": "3 + 3 ** 3",
+		"choice1": "6",
+		"choice2": "9",
+		"choice3": "30",
+		"choice4": "216",
+		"answer": "c3"
+	},
+	{
+		"question": "4 * 4 + 4 * 4",
+		"choice1": "4",
+		"choice2": "16",
+		"choice3": "32",
+		"choice4": "256",
+		"answer": "c3"
+	},
+	{
+		"question": "5 / 5 / 5 / 5",
+		"choice1": "1",
+		"choice2": "2",
+		"choice3": "0.02",
+		"choice4": "0.04",
+		"answer": "c4"
+	},
+	{
+		"question": "6 - 6 - 6 - 6",
+		"choice1": "-12",
+		"choice2": "-18",
+		"choice3": "-24",
+		"choice4": "-32",
+		"answer": "c1"
+	},
+	{
+		"question": "7**7/7**7",
+		"choice1": "0",
+		"choice2": "1",
+		"choice3": "Infinity",
+		"choice4": "-Infinity",
+		"answer": "c3"
+	},
+	{
+		"question": "- 8 + 8 + 8 + 8",
+		"choice1": "0",
+		"choice2": "8",
+		"choice3": "16",
+		"choice4": "24",
+		"answer": "c3"
+	},
+	{
+		"question": "9 - 9 / 9 - 9",
+		"choice1": "-1",
+		"choice2": "1",
+		"choice3": "0",
+		"choice4": "0.11",
+		"answer": "c1"
+	},
+	{
+		"question": "0 ** 0 ** 0",
+		"choice1": "0",
+		"choice2": "1",
+		"choice3": "Infinity",
+		"choice4": "-Infinity",
+		"answer": "c1"
+	},
+	{
+		"question": "4 ** 3 * 2 + 1",
+		"choice1": "128",
+		"choice2": "129",
+		"choice3": "163",
+		"choice4": "164",
 		"answer": "c2"
 	},
 	{
-		"question": "b",
+		"question": "6 + 9 ** 0 / 1",
+		"choice1": "27",
+		"choice2": "15",
+		"choice3": "9",
+		"choice4": "7",
+		"answer": "c4"
+	},
+	{
+		"question": "1 / 1 ** 9 ** 1 / 9 * 9",
 		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
+		"choice2": "9",
+		"choice3": "27",
+		"choice4": "81",
+		"answer": "c1"
+	},
+	{
+		"question": "a = 128; a/a+a-a*a/a ",
+		"choice1": "0",
+		"choice2": "1",
+		"choice3": "Infinity",
+		"choice4": "-Infinity",
 		"answer": "c2"
 	},
 	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
+		"question": "b = 9; b+b**b**b*b",
+		"choice1": "81",
+		"choice2": "243",
+		"choice3": "Infinity",
+		"choice4": "-Infinity",
+		"answer": "c3"
+	},
+	{
+		"question": "Infinity - 0 - Infinity",
+		"choice1": "0",
+		"choice2": "Not-A-Number",
+		"choice3": "Infinity",
+		"choice4": "-Infinity",
 		"answer": "c2"
 	},
 	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
+		"question": "a = 1; b = 127; b-a*b/a",
+		"choice1": "126",
+		"choice2": "127",
+		"choice3": "0",
+		"choice4": "1",
+		"answer": "c3"
 	},
 	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
+		"question": "9 - 8 + 7 - 6 + 5",
+		"choice1": "7",
+		"choice2": "8",
+		"choice3": "9",
+		"choice4": "10",
+		"answer": "c1"
 	},
 	{
-		"question": "b",
+		"question": "4 * 3 * 2 * 1 ** 0",
 		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
+		"choice2": "12",
+		"choice3": "24",
+		"choice4": "48",
+		"answer": "c3"
 	},
 	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
-	},
-	{
-		"question": "b",
-		"choice1": "1",
-		"choice2": "2",
-		"choice3": "3",
-		"choice4": "4",
-		"answer": "c2"
+		"question": "11 / 100 / 11",
+		"choice1": "0.9090",
+		"choice2": "0.9999",
+		"choice3": "0.1010",
+		"choice4": "0.0100",
+		"answer": "c4"
 	}
 
 ]

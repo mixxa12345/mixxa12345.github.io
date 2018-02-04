@@ -4,7 +4,7 @@ var counter = 0;
 var score = 0;
 var width = 100;
 var maxWidth = 100;
-var sec = 3;
+var sec = 10;
 var intervalRate = 10 * sec; //rate-per-quiz = fixed * second
 $(document).ready(function(){
     $(".overlay-content a").on('click',function (e) {
@@ -44,6 +44,7 @@ $(document).ready(function(){
     });
 
 });
+
 function intervalControl() {
     if (width == 0) {
         setQuiz();
@@ -63,8 +64,8 @@ function setQuiz(){
         console.log('Quiz#', rValue);
         console.log('quiz left:',arr.length);
         console.log(quiz);
-        //$(".quiz").html(quiz.question);
-        $(".quiz").html('['+ counter + "]  "+quiz.question);
+        $(".quiz").html(quiz.question);
+        //$(".quiz").html('['+ counter + "]  "+quiz.question);
         $("#c1").html(quiz.choice1);
         $("#c2").html(quiz.choice2);
         $("#c3").html(quiz.choice3);
@@ -74,12 +75,19 @@ function setQuiz(){
     }
 }
 function reset() {
+    var tab = "&nbsp&nbsp&nbsp&nbsp";
     clearInterval(interval);
     $(".screen,.choice ,.quiz").fadeOut();
-    $("#playtime").html("Play Time - "+ (playtime/1000) + "s");
-    $("#result").html("SCORE - "+ score);
+    $("#playtime").html("Play Time " + tab + (playtime/1000) + " sec");
+    $("#result").html("SCORE "+ tab + score +" / " + num);
     $("#ending").height("100%");
     console.log('end');
+    //clean up
+    $(".quiz").html();
+    $("#c1").html();
+    $("#c2").html();
+    $("#c3").html();
+    $("#c4").html();
     playtime = 0;
     counter = 0;
     score = 0;
