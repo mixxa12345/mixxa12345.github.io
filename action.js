@@ -10,7 +10,7 @@ $(document).ready(function(){
     $(".overlay-content a").on('click',function (e) {
         $(".screen,.choice ,.quiz").fadeIn();
         $("#menu").height("0%");
-        console.log('num :',this.id);
+        //console.log('num :',this.id);
         num = parseInt(this.id);
 
         $.ajax({
@@ -24,9 +24,9 @@ $(document).ready(function(){
         });
     });
     $(".choice").on('click', function (e) {
-        console.log('CLICK :',this.id);
+        //console.log('CLICK :',this.id);
         if (this.id == quiz.answer) {
-            console.log('CHECK :',this.id);
+            //console.log('CHECK :',this.id);
             score++;
         }
         width = 0;
@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     //debugger
     $(".quiz").on('click', function () {
-        console.log('FORCE END');
+        //console.log('FORCE END');
         reset();
     });
 
@@ -59,12 +59,12 @@ function setQuiz(){
     if (counter < num) {
         width = maxWidth;
         counter++;
-        console.log('c',counter);
+        //console.log('c',counter);
         let rValue = Math.floor((Math.random() * arr.length));
         quiz = arr.splice(rValue, 1)[0];
-        console.log('Quiz#', rValue);
-        console.log('quiz left:',arr.length);
-        console.log(quiz);
+        //console.log('Quiz#', rValue);
+        //console.log('quiz left:',arr.length);
+        //console.log(quiz);
         var mobs = ["Hydra.png", "Wyvern.png", "Leviathan.png", "Bahamut.png"];
         var mob = mobs[Math.floor(Math.random() * mobs.length)];
         $(".mob").css("content", "url(asset/" + mob + ")");
@@ -72,7 +72,7 @@ function setQuiz(){
         try {
             $(".image").css("content", "url(" + quiz.img + ")");
         } catch(er) {
-            console.log();
+            //usually error cause normal-Quiz not have image
         }
 
         $("#c1").html(quiz.choice1);
@@ -90,7 +90,7 @@ function reset() {
     $("#playtime").html("Play Time " + tab + (playtime/1000) + " sec");
     $("#result").html("SCORE "+ tab + score +" / " + num);
     $("#ending").height("100%");
-    console.log('end');
+    //console.log('end');
     //clean up
     $(".quiz").html();
     $("#c1").html();
