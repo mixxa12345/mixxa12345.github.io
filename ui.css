@@ -15,12 +15,15 @@ body {
 	border-width: medium;
 	align-items: center;
 	text-align: center;
+	font-weight: bold;
 }
 .screen{
 	height: 240px;
 }
-.quiz,.choice{
-	font-weight: bold;
+.quiz{
+	height: 2em;
+	display: flex;
+	flex-direction: column;
 }
 .choice{
 	height: auto;
@@ -33,19 +36,28 @@ body {
 	background-color: white;
 }
 .field {
-	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	height: 89%;
 	width: 99%;
 	margin-bottom: 2%;
 	border-style: solid;
 }
-.mob {
 
+.mob {
+	height: 100%;
+	width: 100%;
+	justify-self: center;
+	background: url("asset/Groz_Island.jpg");
+	content: url("asset/Hydra.png");
 }
 
 #menu, #ending {
 	width: 100%;
 	height: 100%;
-	background-color: rgb(0,0,0);
+	background-color: #000;
 }
 #ending {
 	height: 0;

@@ -52,6 +52,7 @@ function intervalControl() {
         width--;
         playtime += intervalRate;
         $("#timer").width(width + "%");
+
     }
 }
 function setQuiz(){
@@ -64,8 +65,16 @@ function setQuiz(){
         console.log('Quiz#', rValue);
         console.log('quiz left:',arr.length);
         console.log(quiz);
-        $(".quiz").html(quiz.question);
-        //$(".quiz").html('['+ counter + "]  "+quiz.question);
+        var mobs = ["Hydra.png", "Wyvern.png", "Leviathan.png", "Bahamut.png"];
+        var mob = mobs[Math.floor(Math.random() * mobs.length)];
+        $(".mob").css("content", "url(asset/" + mob + ")");
+        $(".quest").html(quiz.question);
+        try {
+            $(".image").css("content", "url(" + quiz.img + ")");
+        } catch(er) {
+            console.log();
+        }
+
         $("#c1").html(quiz.choice1);
         $("#c2").html(quiz.choice2);
         $("#c3").html(quiz.choice3);
