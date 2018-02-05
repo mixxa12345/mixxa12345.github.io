@@ -38,10 +38,12 @@ $(document).ready(function(){
     });
 
     //debugger
+    /*
     $(".quiz").on('click', function () {
         //console.log('FORCE END');
         reset();
     });
+    */
 
 });
 
